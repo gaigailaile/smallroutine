@@ -25,7 +25,7 @@
 		"list": [
 			{
 				"text": "主页",
-				"pagePath": "pages/map/map",
+				"pagePath": "pages/index/index",
 				"iconPath": "assets/icons/home.png",
 				"selectedIconPath": "assets/icons/home-active.png"
 			},
