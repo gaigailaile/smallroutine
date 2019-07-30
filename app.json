@@ -1,0 +1,48 @@
+{
+	"pages": [
+		"pages/map/map",
+		"pages/media/media",
+		"pages/navigator/navigator",
+		"pages/form/form",
+		"pages/basic/basic",
+		"pages/event/event",
+		"pages/wxml/wxml",
+		"pages/index/index"	
+	],
+	"window": {
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "gaigai学习demo",
+		"backgroundColor": "#ededed",
+		"backgroundTextStyle": "dark",
+		"enablePullDownRefresh": true
+	},
+	"tabBar": {
+		"color": "rgba(0,0,0,0.6)",
+		"selectedColor": "#000000",
+		"borderStyle": "white",
+		"backgroundColor": "#ededed",
+		"list": [
+			{
+				"text": "主页",
+				"pagePath": "pages/map/map",
+				"iconPath": "assets/icons/home.png",
+				"selectedIconPath": "assets/icons/home-active.png"
+			},
+			{
+				"text": "视图",
+				"pagePath": "pages/form/form",
+				"iconPath": "assets/icons/web.png",
+				"selectedIconPath": "assets/icons/web-active.png"
+			},
+			{
+				"text": "事件",
+				"pagePath": "pages/event/event",
+				"iconPath": "assets/icons/event.png",
+				"selectedIconPath": "assets/icons/event-active.png"
+			}
+		]
+	},
+	"debug": true,
+	"sitemapLocation": "sitemap.json"
+}

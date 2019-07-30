@@ -1,0 +1,12 @@
+<!-- 
+longitude精度  
+latitude纬度
+scale 缩放级别，最小是5，最大是18，默认16
+-->
+<map
+	longitude='117.0311013'
+	latitude='36.662447'
+	scale='16'
+	markers='{{markers}}'
+>
+</map>

@@ -1,0 +1,13 @@
+<!--icon图标 type标识类型、size表示大小单位是像素 -->
+<icon type='cancel' size='50' class='block'></icon>
+<text class='block'>文本标签</text>
+<view class='container'>
+	<rich-text
+		nodes = '{{ nodes }}'
+	></rich-text>
+</view>
+<!-- 进度条 percent执行的百分比 activeColor激活颜色-->
+<progress percent='30' activeColor='red'></progress>
+
+
+

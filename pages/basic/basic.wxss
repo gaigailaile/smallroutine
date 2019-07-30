@@ -1,0 +1,6 @@
+.block{
+	display: block;
+}
+/* image .image{
+	height: 100%;
+} */

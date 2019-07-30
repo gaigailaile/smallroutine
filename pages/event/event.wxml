@@ -1,0 +1,7 @@
+<!--pages/event/event.wxml-->
+<view class='contioner centered vertical'>
+	<view>
+		<text  class='header'>{{num}}</text>
+	</view>
+</view>
+

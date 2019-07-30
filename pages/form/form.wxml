@@ -1,0 +1,91 @@
+<view>
+	<form bindsubmit='formSubmit'>
+		<label for='slider'>标签说明控件作用,for指向控件的id</label>
+		<slider show-value name='score' id='slider'></slider>
+
+		<input 
+			name='text' 
+			id='text' 
+			class='text' 
+			placeholder='text'
+			bindinput='inputHandler'></input>
+
+		<textarea
+			name='textarea'
+			placeholder='textarea'
+			bindinput='inputHandler'
+		>
+		</textarea>
+
+		<checkbox-group name='checkbox' bindchange='inputHandler'>
+			<label>
+				<text>中国</text>
+				<checkbox value='CN'></checkbox>
+			</label>
+			<label>
+				<text>泰国</text>
+				<checkbox value='TH'></checkbox>
+			</label>
+			<label>
+				<text>日本</text>
+				<checkbox value='JP'></checkbox>
+			</label>
+		</checkbox-group>
+
+		<checkbox-group name='checkbox' bindchange='inputHandler'>
+			<label wx:for='{{country}}' wx:key='key'>
+				<text>{{item.name}}</text>
+				<checkbox value='{{item.value}}'></checkbox>
+			</label>
+		</checkbox-group>
+
+		<radio-group 
+			name='radio'
+			bindchange='inputHandler'
+		>
+			<label wx:for='{{country}}' wx:key='key'>
+				<text>{{item.name}}</text>
+				<radio value='{{item.value}}'></radio>
+			</label>
+		</radio-group>
+
+		<picker
+			name='picker'
+			bindchange='inputHandler'
+			range='{{picker}}'
+		>
+			<view>{{picker[pick]}}</view>
+		</picker>
+
+		<!-- 时间选择器 start，end限制了时间的选择范围-->
+		<picker
+			name='picker'
+			bindchange='inputHandler'
+			mode='time'
+			start='05:00'
+			end='11:59'
+		>
+			<view>{{time}}</view>
+		</picker>
+		<!-- 日期选择器 start、end限制了选择范围 fields限制粒度：默认是day(选择到天数)、month、year-->
+		<picker
+			name='picker'
+			bindchange='inputHandler'
+			mode='date'
+			start='1990-01-01'
+			end='2060-12-31'
+			fields='year'
+		>
+			<view>{{date}}</view>
+		</picker>
+		<!-- 地区选择器 -->
+		<picker
+			name='picker'
+			bindchange='inputHandler'
+			mode='region'
+		>
+			<view>{{region}}</view>
+		</picker>
+		<button form-type='submit'>提交</button>	
+	</form>
+</view>

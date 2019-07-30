@@ -1,0 +1,23 @@
+<view>
+<!--navigator导航控件 
+open-type:打开方式 
+1.switchTab为视图之间的切换 
+2.navigate跳转但不关闭原页面可以通过左上角返回（不能绑定，绑定了视图的页面）
+3.redirect跳转关闭当前页面且不能返回（不能绑定，绑定了视图的页面）
+4.reLaunch跳转关闭所有页面且不能返回（不能绑定，绑定了视图的页面）-->
+	<navigator open-type='switchTab' url='/pages/form/form'>
+		<text>点击</text>
+	</navigator>
+	<navigator open-type='navigate' url='/pages/index/index'>
+		<text>点击navigator</text>
+	</navigator>
+	<navigator open-type='redirect' url='/pages/index/index'>
+		<text>点击redirect</text>
+	</navigator>
+	<navigator open-type='reLaunch' url='/pages/index/index'>
+		<text>点击reLaunch</text>
+	</navigator>
+	<navigator open-type='navigate' url='/pages/index/index?id=34'>
+		<text>点击测试传递参数</text>
+	</navigator>
+</view>

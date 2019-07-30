@@ -1,0 +1,17 @@
+<!-- audio已经不维护了 -->
+<!-- <audio	poster='https://resources.ninghao.net/deng-deng-deng-1x1.jpg'
+	src='https://resources.ninghao.net/deng-deng-deng.mp3'
+	author='gaidongxu'
+	name='deng deng deng'
+	controls
+/> -->
+<video	src='https://resources.ninghao.net/deng-deng-deng.mp4'
+	controls
+	objectFit='cover'
+>
+</video>
+<image
+	mode='aspectFit'
+	src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1563961593279&di=20ce3674a0e9addc6691deda11ae855c&imgtype=0&src=http%3A%2F%2Fimg3.2345.com%2Fduoteimg%2FzixunImg%2Flocal%2F2012%2F10%2F09%2F13497489221008.png'
+/>
+

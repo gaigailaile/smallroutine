@@ -1,0 +1,47 @@
+map{
+	width: 100vw;
+	height: 100vh;
+}
+
+.contioner{
+	box-sizing: border-box;
+	height: 80vh;
+	padding: 8px;
+	background-color: #fff;
+	color:rgba(0, 0, 0, 0.85);
+}
+
+.centered{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+ .centered.vertical > view{
+	display: flex;
+	height: 80vh;
+	flex-direction: row;
+	align-items: center;
+}
+
+.image > image{
+	width: 100%;
+}
+
+form{
+	width: 100vw;
+}
+
+input,textarea,picker{
+	padding: 8px;
+	margin: 8px;
+	border: 1px solid #dddddd;
+	background: #ffffff;
+	border-radius: 4px;
+	width: auto;
+}
+
+button{
+	margin: 8px;
+	border-radius: 4px;
+}

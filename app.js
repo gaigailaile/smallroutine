@@ -1,0 +1,28 @@
+App({
+	onLaunch(options){
+		console.log("小程序初始化");
+		console.log(options);
+	},
+	onShow(options){
+		console.log("显示");
+		console.log(options);
+	},
+	onHide(){
+		console.log("进入后台 隐藏");
+	},
+	onError(error){
+		console.log(error);
+	},
+	globalData:{
+		greeting:[
+			'你好',
+			'Hello',
+			'안녕하세요',
+			'Здравейте',
+			'Здравствыйте',
+			'Bonjour',
+			'Haló',
+			'Alô'
+		]
+	}
+})

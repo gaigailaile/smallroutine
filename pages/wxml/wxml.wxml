@@ -1,0 +1,61 @@
+<scroll-view
+	style='height:180px'
+	scroll-y='{{true}}'
+	scroll-into-view="{{currentView}}"
+	scroll-with-animation="{{true}}"
+>
+	<view class='view-container'>
+		<view id="red" class='red' hover-class='lighten'>
+			<text>1</text>
+		</view>
+		<view id="yellow" class='yellow' hover-class='lighten'>
+			<text>2</text>
+		</view>
+		<view id="blue" class='blue' hover-class='lighten'>
+			<text>3</text>
+		</view>
+	</view>
+</scroll-view>
+
+<button bindtap='setScrollView' data-view='red'>red</button>
+<button bindtap='setScrollView' data-view='yellow'>yellow</button>
+<button bindtap='setScrollView' data-view='blue'>blue</button>
+
+<swiper
+	indicator-dots='{{true}}'
+	indicator-color='rgba(255,255,255,0.3)'
+	indicator-active-color='#ffffff'
+>
+	<swiper-item>
+		<image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1563961593279&di=20ce3674a0e9addc6691deda11ae855c&imgtype=0&src=http%3A%2F%2Fimg3.2345.com%2Fduoteimg%2FzixunImg%2Flocal%2F2012%2F10%2F09%2F13497489221008.png'></image>
+	</swiper-item>
+	<swiper-item>
+		<image src='../../assets/images/demo-1.jpg'></image>
+	</swiper-item>
+	<swiper-item>
+		<image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1563961593279&di=4343bb174a5d41eaf53efb9b1433c64e&imgtype=0&src=http%3A%2F%2Fimg.pcgames.com.cn%2Fimages%2Fpiclib%2F201208%2F16%2Fsimple%2F1%2F134509260096174wl887qha.jpg'></image>
+	</swiper-item>
+</swiper>
+幻灯片2
+<swiper
+	indicator-dots='{{true}}'
+	indicator-color='rgda(255,255,255,0.3)'
+	indicator-active-color='#ffffff'
+>
+	<block wx:for='{{ images }}' wx:key='images'>
+		<swiper-item>
+			<image src='{{ item }}'></image>
+		</swiper-item>
+	</block>
+</swiper>
+可移动视图 direction设置移动方向、inertia设置是否有惯性、out-of-bounds设置是否允许出线、xy设置视图的位置
+<movable-area>
+	<movable-view
+		direction='all'
+		inertia='{{true}}'
+		out-of-bounds='{{true}}'
+		x='30'
+		y='30'
+	>
+	</movable-view>
+</movable-area>
